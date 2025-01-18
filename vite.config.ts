@@ -7,6 +7,7 @@ export default defineConfig({
       entry: resolve(__dirname, "src/antiquint.ts"),
       name: "antiquint",
       fileName: (format) => `antiquint.${format}.js`,
-    }
+    },
+    emptyOutDir: false,
   }
 });

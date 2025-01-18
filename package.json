@@ -1,6 +1,6 @@
 {
 	"name": "@morefunweb/antiquint",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Non-standard implementation of Proquint identifiers",
 	"author": "morefunweb",
 	"repository": {
@@ -12,6 +12,7 @@
 	],
 	"main": "dist/antiquint.umd.js",
 	"module": "dist/antiquint.es.js",
+	"types": "dist/antiquint.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/antiquint.es.js",
@@ -19,7 +20,7 @@
 		}
 	},
 	"scripts": {
-		"build": "tsc -b && vite build",
+		"build": "rm -rf dist/ && tsc && vite build",
 		"test": "vitest",
 		"prepublishOnly": "pnpm run build"
 	},
