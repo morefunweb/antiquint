@@ -1,5 +1,5 @@
 {
-	"name": "antiquint",
+	"name": "@morefunweb/antiquint",
 	"version": "1.0.0",
 	"description": "Non-standard implementation of Proquint identifiers",
 	"author": "morefunweb",
